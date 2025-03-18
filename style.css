@@ -88,8 +88,13 @@ body {
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+    
 }
 
 /* Estilos de entrada de texto */
@@ -145,16 +150,19 @@ ul {
 /* Botón de sortear título */
 .button-draw {
     display: flex;
-    align-items: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 10px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    align-items:center;
+    
 }
 
+
+
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .button-draw:hover {

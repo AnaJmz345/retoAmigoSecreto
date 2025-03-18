@@ -16,7 +16,6 @@ function agregarAmigo(){
     }
     else{
         amigosIngresados.push(amigoNuevo)
-        console.log(amigosIngresados)
         const listaAmigos = document.getElementById("listaAmigos")
         const nuevoAmigoLi = document.createElement("li");
         nuevoAmigoLi.textContent = amigoNuevo
@@ -34,7 +33,16 @@ function sortearAmigo(){
     const nuevoResultado = document.createElement("li");
     nuevoResultado.textContent = `El amigo sorteado es ${amigosIngresados[indiceRandom]}`;
     resultadoSort.appendChild(nuevoResultado);
-  
 }
 
+function borrarListaSorteos(){
+    document.getElementById('resultado').innerHTML = '';
+}
+function borrarTodo(){
 
+    document.getElementById('listaAmigos').innerHTML = '';
+    amigosIngresados.length=0;
+    document.getElementById('resultado').innerHTML = '';
+   
+
+}
